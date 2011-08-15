@@ -4,8 +4,9 @@ require('express-resource');
 var app = module.exports = express.createServer();
 
 var resque = require('coffee-resque').connect({
-  host: 'localhost',
-  port: 6379
+  host: 'angler.redistogo.com',
+  port: 9508,
+  password: 'bc48148753fadbd5b7d994b34f8f7f35'
 });
 
 // Configuration
